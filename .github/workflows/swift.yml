@@ -1,0 +1,46 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main]' ]
+  pull_request:
+    branches: [ main]' ]
+
+jobs:
+  build:
+ .github/workflows/blank.yml
+ .github/workflows/codacy-analysis.yml
+ .github/workflows/openshift.yml
+ .github/workflows/ruby.yml
+ .github/workflows/tencent.yml
+ .gitignore
+ Harrison Dickens.pdf
+ LICENSE
+ Quarantine.lpdf.zip
+ README.md
+ group.system_default
+ stats sikorski assignment 3.pdf
+ the finished product day 1
+ .github/workflows/blank.yml
+ .github/workflows/codacy-analysis.yml
+ .github/workflows/openshift.yml
+ .github/workflows/ruby.yml
+ .github/workflows/tencent.yml
+ .gitignore
+ git@github.com:nolimitharri/new-day.git
+ Harrison Dickens.pdf
+ LICENSE
+ Quarantine.lpdf.zip
+ README.md
+ group.system_default
+ stats sikorski assignment 3.pdf
+ the finished product day 1
+ ‘pimping the butterfly’.docx
+ ‘pimping the butterfly’.docx
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
